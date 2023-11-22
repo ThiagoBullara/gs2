@@ -18,6 +18,10 @@
 
 }
 
+
+
+/* Default */
+
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +37,48 @@ body {
 section {
     padding: 100px;
 }
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+.row .col100 {
+    position: relative;
+    width: 96%;
+}
+
+.titleText {
+    color: var(--corPreto);
+    font-size: 2em;
+    font-weight: 300;
+    font-family: var(--fontePrincipal);
+}
+
+.titleText span {
+    color: var(--corVermelho);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Default */
+
+
 
 /* Header */
 
@@ -60,6 +106,7 @@ header .logo {
     font-weight: 700;
     text-decoration: none;
     color: var(--corBranco);
+    font-family: var(--fontePrincipal);
 }
 
 header.sticky .logo {
@@ -95,7 +142,11 @@ header .navigation li a:hover {
     color: var(--corVermelho);
 }
 
-/* Banner home */
+/* Header */
+
+
+
+/* Banner Home */
 
 .banner {
     position: relative;
@@ -116,6 +167,7 @@ header .navigation li a:hover {
 .banner .content h2 {
     font-size: 6em;
     color: var(--corBranco);
+    font-family: var(--fontePrincipal);
 }
 
 .banner .content p {
@@ -123,29 +175,11 @@ header .navigation li a:hover {
     color: var(--corBranco);
 }
 
-.row {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
+/* Banner Home */
 
-.row .col50 {
-    position: relative;
-    width: 48%;
-}
 
-.titleText {
-    color: #111;
-    font-size: 2em;
-    font-weight: 300;
-}
 
-.titleText span {
-    color: #ff0157;
-    font-weight: 700;
-    font-size: 1.5em;
-}
+/* Sobre */
 
 .row .col50 .imgBx {
     position: relative;
@@ -162,67 +196,146 @@ header .navigation li a:hover {
     object-fit: cover;
 }
 
-.title {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+/* Sobre */
+
+
+
+/* Equipe */
+
+
+
+
+
+/* Equipe */
+
+
+
+/* Video */
+
+.video {
+    text-align: center;
 }
+
+.rowVideo {
+    place-content: center;
+}
+
+.row .col100 .titleTextVideo {
+    margin-bottom: 5%;
+}
+
+.row .col100 .videoBx iframe{
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Video */
+
+
 
 /* Fale conosco */
 
 .contact {
-    background: url(../imgs/01.jpg);
+    background: url(../imgs/02.jpg);
     background-size: cover;
 }
 
+.contact .title p {
+    margin-top: 2%;
+    font-size: 1.25rem;
+}
+
 .contactForm {
-    padding: 75px 50px;
-    background: #fff;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
     max-width: 500px;
     margin-top: 50px;
+    padding: 75px 50px;
+    background: var(--corBranco);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
 }
 
 .contactForm h3 {
-    color: #111;
     font-size: 1.2em;
-    margin-bottom: 20px;
     font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--corPreto);
 }
 
 .contactForm form .inputBox {
-    position: relative;
     width: 100%;
+    position: relative;
     margin-bottom: 20px;     
 }
 
 .contactForm form .inputBox input, .contactForm form .inputBox textarea {
     width: 100%;
-    border: 1px solid #555;
+    resize: none;
     padding: 10px;
-    color: #111;
     outline: none;
     font-size: 16px;
     font-weight: 300;
-    resize: none;
+    color: var(--corPreto);
+    border: 1px solid var(--corCinza);
 }
 
 .contactForm form .inputBox input[type="submit"] {
+    border: none;
     font-size: 1em;
-    color: #fff;
-    background: #ff0157;
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
+    cursor: pointer;
     transition: 0.5s;
     max-width: 100px;
     font-weight: 500;
-    border: none;
-    cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--corBranco);
+    text-transform: uppercase;
+    background: var(--corVermelho);
 }
+
+.contactForm form .inputBox input[type="submit"]:hover {
+    color: var(--corVermelho);
+    background: var(--corBranco);
+    border: 1px solid var(--corVermelho);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 991px) {
     header, header.sticky {
@@ -251,7 +364,7 @@ header .navigation li a:hover {
     }
 
     header .navigation li a {
-        color: #111;
+        color: var(--corPreto);
         font-size: 1.6em;
     }
 
@@ -285,7 +398,7 @@ header .navigation li a:hover {
 
     .banner .content h2 {
         font-size: 3em;
-        color: #fff;
+        color: var(--corBranco);
     }
 
     .row {
@@ -323,6 +436,6 @@ header .navigation li a:hover {
 @media (max-width: 480px) {
     .banner .content h2 {
         font-size: 2.2em;
-        color: #fff;
+        color: var(--corBranco);
     }
 }

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 function Menu(){
     return(
         <header>
-            <Link class="logo">Music<span>.</span></Link>
+            <Link to='/' class="logo">Music for <span>Health</span></Link>
             <div class="menuToggle" onclick="toggleMenu();"></div>
             <ul class="navigation">
                 <li><Link to='/' onclick="toggleMenu();">Home</Link></li>
