@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+:root {
+
+    --fontePrincipal: 'Playfair Display', serif;
+    --fonteSecundaria: 'EB Garamond', serif;
+
+    --corPreto: #0D0D0D;
+    --corBranco: #FFFFFF;
+    --corCinza: #D7D7D9;
+
+    --corVermelho: #BF0404;
+    --corRosa: #BF3B53;
+
+    --corAzul: #035AA6;
+    --corAzulCaro: #1DCBF2;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: var(--fonteSecundaria);
+}
+
+body {
+    min-height: 1000px;
+}
+
+section {
+    padding: 100px;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 10000;
+    transition: 0.5s;
+    align-items: center;
+    padding: 40px 100px;
+    justify-content: space-between;
+}
+
+header.sticky {
+    padding: 10px 100px;
+    background: var(--corBranco);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+    font-size: 3em;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--corBranco);
+}
+
+header.sticky .logo {
+    color: var(--corPreto);
+}
+
+header .logo span {
+    color: var(--corVermelho);
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a{
+    font-size: 1.5em;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--corBranco);
+}
+
+header.sticky .navigation li a {
+    color: var(--corPreto);
+}
+
+header .navigation li a:hover {
+    color: var(--corVermelho);
+}
+
+/* Banner home */
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imgs/01.jpg);
+    background-size: cover;
+}
+
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2 {
+    font-size: 6em;
+    color: var(--corBranco);
+}
+
+.banner .content p {
+    font-size: 1.5em;
+    color: var(--corBranco);
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+.titleText {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText span {
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Fale conosco */
+
+.contact {
+    background: url(../imgs/01.jpg);
+    background-size: cover;
+}
+
+.contactForm {
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.contactForm h3 {
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contactForm form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;     
+}
+
+.contactForm form .inputBox input, .contactForm form .inputBox textarea {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactForm form .inputBox input[type="submit"] {
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    header, header.sticky {
+        padding: 10px 20px;
+    }
+
+    header .navigation {
+        display: none;
+    }
+
+    header .navigation.active {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    header .navigation li {
+        margin-left: 0;
+    }
+
+    header .navigation li a {
+        color: #111;
+        font-size: 1.6em;
+    }
+
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../imgs/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .menuToggle.active {
+        background: url(../imgs/close.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 0.2s;
+    }
+
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .banner .content h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col50 .imgBx {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .titleText {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+
+    .contactForm {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner .content h2 {
+        font-size: 2.2em;
+        color: #fff;
+    }
+}
