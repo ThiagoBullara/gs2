@@ -18,8 +18,6 @@
 
 }
 
-
-
 /* Default */
 
 * {
@@ -35,37 +33,37 @@ body {
 }
 
 section {
-    padding: 100px;
+    padding: 50px 100px;
 }
 
 .row {
-    position: relative;
     width: 100%;
     display: flex;
+    position: relative;
     justify-content: space-between;
 }
 
 .row .col50 {
-    position: relative;
     width: 48%;
+    position: relative;
 }
 
 .row .col100 {
-    position: relative;
     width: 96%;
+    position: relative;
 }
 
 .titleText {
-    color: var(--corPreto);
     font-size: 2em;
     font-weight: 300;
+    color: var(--corPreto);
     font-family: var(--fontePrincipal);
 }
 
 .titleText span {
-    color: var(--corVermelho);
     font-weight: 700;
     font-size: 1.5em;
+    color: var(--corVermelho);
 }
 
 .title {
@@ -77,8 +75,6 @@ section {
 }
 
 /* Default */
-
-
 
 /* Header */
 
@@ -118,18 +114,18 @@ header .logo span {
 }
 
 header .navigation {
-    position: relative;
     display: flex;
+    position: relative;
 }
 
 header .navigation li {
     list-style: none;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 header .navigation li a{
-    font-size: 1.5em;
     font-weight: 400;
+    font-size: 1.25em;
     text-decoration: none;
     color: var(--corBranco);
 }
@@ -144,23 +140,21 @@ header .navigation li a:hover {
 
 /* Header */
 
-
-
 /* Banner Home */
 
 .banner {
-    position: relative;
     width: 100%;
-    min-height: 100vh;
     display: flex;
-    justify-content: center;
+    min-height: 100vh;
+    position: relative;
     align-items: center;
-    background: url(../imgs/01.jpg);
+    justify-content: center;
+    background: url(../imgs/home/00.jpg);
     background-size: cover;
 }
 
 .banner .content {
-    max-width: 900px;
+    max-width: 1000px;
     text-align: center;
 }
 
@@ -177,14 +171,12 @@ header .navigation li a:hover {
 
 /* Banner Home */
 
-
-
 /* Sobre */
 
 .row .col50 .imgBx {
-    position: relative;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .row .col50 .imgBx img {
@@ -198,8 +190,6 @@ header .navigation li a:hover {
 
 /* Sobre */
 
-
-
 /* Equipe */
 
 
@@ -207,8 +197,6 @@ header .navigation li a:hover {
 
 
 /* Equipe */
-
-
 
 /* Video */
 
@@ -230,12 +218,10 @@ header .navigation li a:hover {
 
 /* Video */
 
-
-
 /* Fale conosco */
 
 .contact {
-    background: url(../imgs/02.jpg);
+    background: url(../imgs/home/02.jpg);
     background-size: cover;
 }
 
@@ -253,7 +239,7 @@ header .navigation li a:hover {
 }
 
 .contactForm h3 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 500;
     margin-bottom: 20px;
     color: var(--corPreto);
@@ -296,6 +282,81 @@ header .navigation li a:hover {
     background: var(--corBranco);
     border: 1px solid var(--corVermelho);
 }
+
+/* Fale conosco */
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    color: var(--corBranco);
+    background: var(--corPreto);
+}
+
+footer .footerContent {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .footerContent h3 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+footer .footerContent p {
+    max-width: 500px;
+    margin: 10px;
+    line-height: 28px;
+    font-size: 1.125rem;
+}
+
+footer .footerContent .footerIcons {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0rem 3rem 0rem;
+}
+
+footer .footerContent .footerIcons li {
+    margin: 0px 10px;
+}
+
+footer .footerContent .footerIcons li a {
+    text-decoration: none;
+    color: var(--corBranco);
+}
+
+footer .footerEnd {
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    background-color: black;
+}
+
+footer .footerEnd p {
+    font-size: 1.125rem;
+}
+
+footer .footerEnd p span, footer .footerContent h3 span {
+    color: var(--corVermelho);
+}
+
+/* Footer */
+
+
+
+
+
+
+
+
 
 
 
@@ -372,7 +433,7 @@ header .navigation li a:hover {
         position: relative;
         width: 40px;
         height: 40px;
-        background: url(../imgs/menu.png);
+        background: url(../imgs/menu/open.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
@@ -381,7 +442,7 @@ header .navigation li a:hover {
     }
 
     .menuToggle.active {
-        background: url(../imgs/close.png);
+        background: url(../imgs/menu/close.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;

@@ -6,11 +6,11 @@ function Menu(){
             <Link to='/' class="logo">Music for <span>Health</span></Link>
             <div class="menuToggle" onclick="toggleMenu();"></div>
             <ul class="navigation">
-                <li><Link to='/' onclick="toggleMenu();">Home</Link></li>
-                <li><Link to='/pagina2' onclick="toggleMenu();">Pagina2</Link></li>
-                <li><Link to='/pagina3' onclick="toggleMenu();">Pagina3</Link></li>
-                <li><Link to='/pagina4' onclick="toggleMenu();">Pagina4</Link></li>
-                <li><Link to='/pagina5' onclick="toggleMenu();">Pagina5</Link></li>
+                <li><Link to='/' onclick="toggleMenu();">Home |</Link></li>
+                <li><Link to='/pagina2' onclick="toggleMenu();">Mortalidade infantil |</Link></li>
+                <li><Link to='/pagina3' onclick="toggleMenu();">Doenças transmissíveis |</Link></li>
+                <li><Link to='/pagina4' onclick="toggleMenu();">Doenças não transmissíveis |</Link></li>
+                <li><Link to='/pagina5' onclick="toggleMenu();">Melhoria da saúde |</Link></li>
             </ul>
         </header>
     )
