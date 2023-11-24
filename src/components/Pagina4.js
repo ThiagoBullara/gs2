@@ -41,7 +41,7 @@ function Pagina4() {
             <div class="row">
                 <div class="col50">
                     <div class="imgBx img50">
-                        <img src={img02} alt="Imagem de um paciente com cancer" title='Imagem de um paciente com cancer'/>
+                        <img src={img02} alt="Imagem de uma médica" title='Imagem de uma médica'/>
                     </div>
                 </div>
                 <div class="col50">

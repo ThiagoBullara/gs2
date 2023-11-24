@@ -93,7 +93,7 @@ function Home() {
                 <div class="col100">
                     <div class="titleTextVideo">
                         <h2 class="titleText"><span>V</span>ídeo Pitch</h2>
-                        <p>Caso esteja com problemas para visualizar o vídeo por favor acesse o link: <a href="#">Link vídeo</a></p>
+                        <p>Caso esteja com problemas para visualizar o vídeo por favor acesse o link: <a class="redlink" href="#">Link vídeo</a></p>
                     </div>
                     <div class="videoBx">
                         <iframe width="100%" height="585" src="https://www.youtube.com/embed/fHFM-xgU5hk" title="a light academia classical study playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

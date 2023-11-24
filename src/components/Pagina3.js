@@ -11,7 +11,7 @@ function Pagina3() {
     return(
         <>
 
-        <section class="banner banner-mortalidade">
+        <section class="banner banner-transmissiveis">
             <div class="content">
                 <h2>Combate a doenças transmissíveis</h2>
                 <p>Compreendendo o Problema e Contribuindo com Soluções.</p>

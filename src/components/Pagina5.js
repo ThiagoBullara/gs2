@@ -40,7 +40,7 @@ function Pagina5() {
             <div class="row">
                 <div class="col50">
                     <div class="imgBx img50">
-                        <img src={img02} alt="Imagem de um paciente com cancer" title='Imagem de um paciente com cancer'/>
+                        <img src={img02} alt="Imagem de crianças brincando" title='Imagem de crianças brincando'/>
                     </div>
                 </div>
                 <div class="col50">
