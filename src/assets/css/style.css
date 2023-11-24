@@ -138,6 +138,10 @@ header .navigation li a:hover {
     color: var(--corVermelho);
 }
 
+.navResponsivo {
+    display: none;
+}
+
 /* Header */
 
 /* Banner Home */
@@ -200,7 +204,7 @@ header .navigation li a:hover {
 .team .card {
     width: 300px;
     margin: 20px;
-    height: 360px;
+    height: 400px;
     padding: 60px 30px;
     border-radius: 20px;
     background: #F2F3F7;
@@ -408,13 +412,39 @@ footer .footerEnd p span, footer .footerContent h3 span {
 
 /* Responsividade */
 
+@media (max-width: 1389px) {
+    header .navigation.navDefault {
+        display: none;
+    }
+
+    .navResponsivo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 25px 0px;
+    }
+
+    .navResponsivo li {
+        list-style: none;
+        margin: 10px 0px;
+    }
+
+    .navResponsivo li a {
+        font-weight: 400;
+        font-size: 1.55em;
+        text-decoration: none;
+        color: var(--corPreto);
+    }
+
+    .navResponsivo li a:hover {
+        color: var(--corVermelho);
+    }
+
+}
+
 @media (max-width: 991px) {
     header, header.sticky {
         padding: 10px 20px;
-    }
-
-    header .navigation {
-        display: none;
     }
 
     header .navigation.active {
@@ -428,39 +458,6 @@ footer .footerEnd p span, footer .footerContent h3 span {
         align-items: center;
         flex-direction: column;
         background: rgba(255, 255, 255, 0.9);
-    }
-
-    header .navigation li {
-        margin-left: 0;
-    }
-
-    header .navigation li a {
-        color: var(--corPreto);
-        font-size: 1.6em;
-    }
-
-    .menuToggle {
-        position: relative;
-        width: 40px;
-        height: 40px;
-        background: url(../imgs/menu/open.png);
-        background-size: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
-        transition: 0.2s;
-    }
-
-    .menuToggle.active {
-        background: url(../imgs/menu/close.png);
-        background-size: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
-        transition: 0.2s;
-    }
-
-    header.sticky .menuToggle {
-        filter: invert(1);
     }
 
     section {

@@ -1,8 +1,8 @@
 import img01 from '../assets/imgs/transmissiveis/img1.jpg';
 import img02 from '../assets/imgs/transmissiveis/img2.jpg';
 import img03 from '../assets/imgs/transmissiveis/img3.jpg';
-import banner from '../assets/imgs/transmissiveis/banner.jpg';
 
+import {Link} from 'react-router-dom';
 
 import '../assets/css/transmissiveis.css';
 
@@ -17,7 +17,16 @@ function Pagina3() {
                 <p>Compreendendo o Problema e Contribuindo com Soluções.</p>
             </div>
         </section>
-
+        <div>
+            <ul class="navigation navResponsivo">
+                <h3 class="titleText"><span>N</span>avegação</h3>
+                <li><Link to='/'>Home |</Link></li>
+                <li><Link to='/mortalidade-infantil'>Mortalidade infantil |</Link></li>
+                <li><Link to='/doencas-transmissiveis'>Doenças transmissíveis |</Link></li>
+                <li><Link to='/doencas-nao-transmissiveis'>Doenças não transmissíveis |</Link></li>
+                <li><Link to='/melhoria-da-saude'>Melhoria da saúde |</Link></li>
+            </ul>
+        </div>
         <section class="dados">
             <div class="row">
                 <div class="col50">

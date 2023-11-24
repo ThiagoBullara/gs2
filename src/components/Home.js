@@ -1,4 +1,8 @@
 import img01 from '../assets/imgs/home/01.jpg';
+import img03 from '../assets/imgs/home/03.png';
+import img04 from '../assets/imgs/home/04.png';
+
+import {Link} from 'react-router-dom';
 
 function Home() {
     return(
@@ -10,7 +14,16 @@ function Home() {
                 <p>Um híbrido entre a arte e a saúde, uma forma alternativa de tratamento.</p>
             </div>
         </section>
-        
+        <div>
+            <ul class="navigation navResponsivo">
+                <h3 class="titleText"><span>N</span>avegação</h3>
+                <li><Link to='/'>Home |</Link></li>
+                <li><Link to='/mortalidade-infantil'>Mortalidade infantil |</Link></li>
+                <li><Link to='/doencas-transmissiveis'>Doenças transmissíveis |</Link></li>
+                <li><Link to='/doencas-nao-transmissiveis'>Doenças não transmissíveis |</Link></li>
+                <li><Link to='/melhoria-da-saude'>Melhoria da saúde |</Link></li>
+            </ul>
+        </div>
         <section class="about dados">
             <div class="row">
                 <div class="col50">
@@ -59,12 +72,12 @@ function Home() {
                             <div class="card">
                                 <div class="content">
                                     <div class="imgCard">
-                                        <img src={img01} alt="Imagem de um membro da equipe" title='Imagem de um membro da equipe'/>
+                                        <img src={img03} alt="Imagem de um membro da equipe" title='Imagem de um membro da equipe'/>
                                     </div>
                                     <div class="contentCard">
-                                        <h4>Nome</h4>
-                                        <h5>Cargo de desenvolvimento</h5>
-                                        <h5>RM: 111111</h5>
+                                        <h4>Thiago Bullara Leite</h4>
+                                        <h5>Desenvolvedor Front-End & Back-End</h5>
+                                        <h5>RM: 99461</h5>
                                     </div>
                                 </div>
                             </div>
@@ -73,12 +86,12 @@ function Home() {
                             <div class="card">
                                 <div class="content">
                                     <div class="imgCard">
-                                        <img src={img01} alt="Imagem de um membro da equipe" title='Imagem de um membro da equipe'/>
+                                        <img src={img04} alt="Imagem de um membro da equipe" title='Imagem de um membro da equipe'/>
                                     </div>
                                     <div class="contentCard">
-                                        <h4>Nome</h4>
-                                        <h5>Cargo de desenvolvimento</h5>
-                                        <h5>RM: 111111</h5>
+                                        <h4>Arthur Alcântara Bogiano</h4>
+                                        <h5>Desenvolvedor Front-End & Back-End / Editor Vídeo Pitch</h5>
+                                        <h5>RM: 550543</h5>
                                     </div>
                                 </div>
                             </div>

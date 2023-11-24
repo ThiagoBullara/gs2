@@ -1,6 +1,8 @@
 import img01 from "../assets/imgs/melhoriaNaSaude/01.jpg";
 import img02 from "../assets/imgs/melhoriaNaSaude/02.jpg";
 
+import {Link} from 'react-router-dom';
+
 import '../assets/css/melhoriaNaSaude.css';
 
 function Pagina5() {
@@ -13,7 +15,16 @@ function Pagina5() {
                 <p>Pequenos hábitos que podem melhorar sua Qualidade de Vida.</p>
             </div>
         </section>
-
+        <div>
+            <ul class="navigation navResponsivo">
+                <h3 class="titleText"><span>N</span>avegação</h3>
+                <li><Link to='/'>Home |</Link></li>
+                <li><Link to='/mortalidade-infantil'>Mortalidade infantil |</Link></li>
+                <li><Link to='/doencas-transmissiveis'>Doenças transmissíveis |</Link></li>
+                <li><Link to='/doencas-nao-transmissiveis'>Doenças não transmissíveis |</Link></li>
+                <li><Link to='/melhoria-da-saude'>Melhoria da saúde |</Link></li>
+            </ul>
+        </div>
         <section class="dados">
             <div class="row">
                 <div class="col50">

@@ -5,6 +5,7 @@ import img02 from '../assets/imgs/mortalidade/map.png';
 import borda from '../assets/imgs/mortalidade/sangue.avif';
 import kid from '../assets/imgs/mortalidade/kid.jpg';
 
+import {Link} from 'react-router-dom';
 
 import '../assets/css/mortalidade.css';
 
@@ -29,7 +30,16 @@ function Pagina2() {
                 <p>Compreendendo o Problema e Contribuindo com Soluções.</p>
             </div>
         </section>
-
+        <div>
+            <ul class="navigation navResponsivo">
+                <h3 class="titleText"><span>N</span>avegação</h3>
+                <li><Link to='/'>Home |</Link></li>
+                <li><Link to='/mortalidade-infantil'>Mortalidade infantil |</Link></li>
+                <li><Link to='/doencas-transmissiveis'>Doenças transmissíveis |</Link></li>
+                <li><Link to='/doencas-nao-transmissiveis'>Doenças não transmissíveis |</Link></li>
+                <li><Link to='/melhoria-da-saude'>Melhoria da saúde |</Link></li>
+            </ul>
+        </div>
         <section class="dados">
             <div class="row">
                 <div class="col50">
