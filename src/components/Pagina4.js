@@ -48,7 +48,7 @@ function Pagina4() {
                     <h2 class="titleText"><span>C</span>omo podemos prevenir e tratar essas doenças?</h2><br></br>
                     <p>Cuidar da saúde e evitar doenças crônicas é um processo contínuo que envolve diversos aspectos da vida, 
                     algumas dicas para promover uma vida saudável e prevenir doenças crônicas incluem:</p><br/>
-                    <p>1- Manter uma dieta saudável e equilibrada, com alimentos variados e ricos em nutrientes essenciais, 
+                    <p>1 - Manter uma dieta saudável e equilibrada, com alimentos variados e ricos em nutrientes essenciais, 
                     como frutas, verduras, legumes, grãos integrais, proteínas magras e gorduras saudáveis.<br/>
                     2 - Praticar exercícios físicos regularmente, de acordo com as orientações médicas e suas capacidades físicas.<br/>
                     3 - Controlar o estresse e a ansiedade, por meio de técnicas como meditação, yoga ou outras atividades que ajudem a relaxar.<br/>
