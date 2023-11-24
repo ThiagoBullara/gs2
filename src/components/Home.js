@@ -10,10 +10,11 @@ function Home() {
                 <p>Um híbrido entre a arte e a saúde, uma forma alternativa de tratamento.</p>
             </div>
         </section>
-        <section class="about">
+        
+        <section class="about dados">
             <div class="row">
                 <div class="col50">
-                    <h2 class="titleText"><span>O</span>que é Musicoterapia?</h2><br></br>
+                    <h2 class="titleText"><span>O</span> que é Musicoterapia?</h2><br></br>
                     <p>A origem da musicoterapia contemporânea tem suas raízes na segunda guerra, 
                     a música era usada em hospitais americanos para ajudar na recuperação de pacientes 
                     com transtornos mentais e emocionais.</p><br></br>
@@ -36,7 +37,7 @@ function Home() {
             </div>
         </section>
 
-        <section class="team">
+        <section class="team dados">
             <div class="row">
                 <div class="col50">
                     card team
@@ -60,7 +61,7 @@ function Home() {
             </div>
         </section>
 
-        <section class="video" id="video">
+        <section class="video dados" id="video">
             <div class="row rowVideo">
                 <div class="col100">
                     <div class="titleTextVideo">
@@ -73,6 +74,7 @@ function Home() {
                 </div>
             </div>
         </section>
+        
         <section class="contact" id="contact">
             <div class="title">
                 <h2 class="titleText"><span>F</span>ale conosco</h2>
