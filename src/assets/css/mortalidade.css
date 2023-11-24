@@ -1,0 +1,31 @@
+.mortalidade {
+    text-align: center;
+}
+
+.borda {
+    width: 100%;
+}
+
+.space {
+    margin: 70px 0px;
+}
+
+/* .img50 img {
+    width: 100%;
+} */
+
+/* .dados { 
+    margin-top: 100px;
+    margin-bottom: 100px;
+} */
+
+.banner-mortalidade {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: url(../imgs/mortalidade/banner.jpg);
+    background-size: cover;
+}

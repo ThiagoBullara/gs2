@@ -397,6 +397,15 @@ footer .footerEnd p span, footer .footerContent h3 span {
 
 /* Footer */
 
+.img50 img {
+    width: 100%;
+}
+
+.dados { 
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 /* Responsividade */
 
 @media (max-width: 991px) {
