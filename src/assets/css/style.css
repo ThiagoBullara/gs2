@@ -11,10 +11,10 @@
     --corCinza: #D7D7D9;
 
     --corVermelho: #BF0404;
-    --corRosa: #BF3B53;
+    /* --corRosa: #BF3B53;
 
     --corAzul: #035AA6;
-    --corAzulCaro: #1DCBF2;
+    --corAzulCaro: #1DCBF2; */
 
 }
 
@@ -192,9 +192,56 @@ header .navigation li a:hover {
 
 /* Equipe */
 
+.team .rowCards {
+    margin-top: 50px;
+    text-align: -webkit-center;
+}
 
+.team .card {
+    width: 300px;
+    margin: 20px;
+    height: 360px;
+    padding: 60px 30px;
+    border-radius: 20px;
+    background: #F2F3F7;
+    box-shadow: 0.6em 0.6em 1.2em #D2DCE9, -0.5em -0.5em 1em var(--corBranco)
+}
 
+.team .card .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.team .card .content .imgCard {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.team .card .content .imgCard img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team .card .content .contentCard h4, .team .card .content .contentCard h5 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--corPreto);
+}
+
+.team .card .content .contentCard h5 {
+    font-size: 1.2rem;
+}
 
 /* Equipe */
 
@@ -350,53 +397,7 @@ footer .footerEnd p span, footer .footerContent h3 span {
 
 /* Footer */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Responsividade */
 
 @media (max-width: 991px) {
     header, header.sticky {
@@ -500,3 +501,5 @@ footer .footerEnd p span, footer .footerContent h3 span {
         color: var(--corBranco);
     }
 }
+
+/* Responsividade */

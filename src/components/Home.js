@@ -35,31 +35,56 @@ function Home() {
                 </div>
             </div>
         </section>
-
         <section class="team">
             <div class="row">
-                <div class="col50">
-                    card team
-                </div>
-                <div class="col50">
+                <div class="col100">
                     <h2 class="titleText"><span>N</span>osso projeto e <span>E</span>quipe</h2><br></br>
-                    <p>A origem da musicoterapia contemporânea tem suas raízes na segunda guerra, 
-                    a música era usada em hospitais americanos para ajudar na recuperação de pacientes 
-                    com transtornos mentais e emocionais.</p><br></br>
-                    <p>Trata-se de um híbrido entre arte e saúde que serve para 
-                    promover a comunicação, tratamento, expressão e aprendizado dos pacientes. Não é uma técnica
-                    nova porém investigações mais científicas começaram apenas a partir do século XX, 
-                    e apresentaram um grande potencial terapêutico. Além disso, busca facilitar a 
-                    organização e a forma de se relacionar dos seus pacientes. Trabalha no tratamento 
-                    de doenças através da música, seja escutando, dançando, cantando e até mesmo tocando 
-                    algum instrumento.</p><br></br>
-                    <p>Podendo agir em diversas áreas médicas como Hospitalar, Educacional, Organizacional 
-                    e principalmente na Saúde Mental e na Gerontologia. Melhorando a qualidade de vida, 
-                    incentivando o aprendizado musical e ajudando a tratar e prevenir transtornos mentais.</p>
+                    <p>A Music for Health é uma solução criada para a Global Solution 2 da FIAP do ano de 2023,
+                    <i> Global Solution - inovação e tecnologia criando o futuro da sáude - prevenção, automação e precisão</i>
+                    , proposta pela empresa Hapvida Notredame Intermédica.</p><br></br>
+                    <p>Nosso objetivo é o desenvolvimento de um sistema para realizar, acompanhar, gerenciar e 
+                    desenvolver um tratamento de musicoterapia para a área da saúde mental e gerontologia. Nele o usuário tem 
+                    acesso ao tratamento prescrito por seu médico pelo seu celular ou computador podendo ser realizado a distância 
+                    ou presencialmente. O sistema utilizaria da IOT (Internet of Things) para proporcionar uma melhor experiência ao usuário, seja ele 
+                    situando-se em sua casa, no seu carro ou em seu trabalho. O sistema também usaria Machine Learnig para aperfeiçoar 
+                    o tratamento, a sua interatividade e a jornada do paciente.</p><br></br>
+                </div>
+            </div>
+            <div class="row rowCards">
+                <div class="col100">
+                    <div class="row">
+                        <div class="col50">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="imgCard">
+                                        <img src={img01} alt="Imagem de um membro da equipe" title='Imagem de um membro da equipe'/>
+                                    </div>
+                                    <div class="contentCard">
+                                        <h4>Nome</h4>
+                                        <h5>Cargo de desenvolvimento</h5>
+                                        <h5>RM: 111111</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col50">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="imgCard">
+                                        <img src={img01} alt="Imagem de um membro da equipe" title='Imagem de um membro da equipe'/>
+                                    </div>
+                                    <div class="contentCard">
+                                        <h4>Nome</h4>
+                                        <h5>Cargo de desenvolvimento</h5>
+                                        <h5>RM: 111111</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
         <section class="video" id="video">
             <div class="row rowVideo">
                 <div class="col100">
