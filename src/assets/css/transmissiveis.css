@@ -1,15 +1,3 @@
-.mortalidade {
-    text-align: center;
-}
-
-.borda {
-    width: 100%;
-}
-
-.space {
-    margin: 70px 0px;
-}
-
 .banner-mortalidade {
     width: 100%;
     display: flex;
@@ -17,6 +5,10 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    background: url(../imgs/mortalidade/banner.jpg);
+    background: url(../imgs/transmissiveis/banner.jpg);
     background-size: cover;
+}
+
+.redlink {
+    color: red;
 }
