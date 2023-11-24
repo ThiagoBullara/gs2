@@ -30,7 +30,7 @@ function Home() {
                     incentivando o aprendizado musical e ajudando a tratar e prevenir transtornos mentais.</p>
                 </div>
                 <div class="col50">
-                    <div class="imgBx">
+                    <div class="imgBx img50">
                         <img src={img01} alt="Imagem sobre Musicoterapia" title='Imagem sobre Musicoterapia'/>
                     </div>
                 </div>

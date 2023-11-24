@@ -1,0 +1,10 @@
+.bannerDoencaNaoTransmissivel {
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background: url(../imgs/doencaNaoTransmissivel/00.jpg);
+    background-size: cover;
+}
