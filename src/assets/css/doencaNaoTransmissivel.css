@@ -8,3 +8,7 @@
     background: url(../imgs/doencaNaoTransmissivel/00.jpg);
     background-size: cover;
 }
+
+.rowInfo {
+    text-align: center;
+}

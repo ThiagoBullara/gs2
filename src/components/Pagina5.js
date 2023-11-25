@@ -1,11 +1,26 @@
 import img01 from "../assets/imgs/melhoriaNaSaude/01.jpg";
 import img02 from "../assets/imgs/melhoriaNaSaude/02.jpg";
+import img03 from "../assets/imgs/melhoriaNaSaude/03.png";
 
 import {Link} from 'react-router-dom';
+import React, { useState, useEffect  } from 'react';
 
 import '../assets/css/melhoriaNaSaude.css';
 
 function Pagina5() {
+    
+    const [altura, setAltura] = useState(0);
+    const [peso, setPeso] = useState(0);
+    const [resultado, setResultado] = useState(0);
+
+    const calcularImc = () => {
+        return (peso / (altura * altura)).toFixed(2);
+    };
+
+    useEffect(() => {
+        setResultado(calcularImc());
+    }, [altura, peso]);
+
     return(
         <>
 
@@ -78,7 +93,31 @@ function Pagina5() {
                         <li><p>Cultive os <strong>relacionamentos</strong>, Os laços sociais são importantes, porque mantêm os vínculos afetivos. Somos animais sociais, 
                         portanto, mantenha a sua rede de contatos ativa. Fale com seus amigos e familiares, busque interagir com pessoas novas, converse e tenha momentos de lazer em grupo.</p></li>
                     </ol>
-                    
+                </div>
+            </div>
+        </section>
+
+        <section class="dados">
+            <div class="row">
+                <div class="col50">
+                    <h2 class="titleText"><span>IMC</span> uma forma de calcular o peso ideal.</h2><br></br>
+                    <p> O IMC, índice de massa corporal, é uma medida internacional usada para calcular se uma pessoa está no peso ideal. 
+                    <br/><br/>Desenvolvido pelo polímata Lambert Quételet no fim do século XIX, trata-se de um método fácil e rápido para a avaliação do 
+                    nível de gordura de cada pessoa, sendo, por isso, um preditor internacional de obesidade adotado pela Organização Mundial da Saúde (OMS).</p><br/>
+                    <p>Utilize a nossa calculadora de IMC para verificar se você está no peso ideal:</p><br/>
+                    <div class="calculadoraImc">
+                        <h3 class="titleText titleTextImc">Calculadora de IMC</h3><br/>
+                        <label class="labelImc">Insira a sua altura (em Metros) </label>
+                        <input type="number" value={altura} onChange={(e) => setAltura(e.target.value)} min="0" class="inputImc"/><br/><br/>
+                        <label class="labelImc">Insira o seu peso (em Kilos) </label>
+                        <input type="number" value={peso} onChange={(e) => setPeso(e.target.value)} min="0" class="inputImc"/><br/><br/>
+                        <label class="labelResultado">Resultado: <span>{resultado}</span></label>
+                    </div>
+                </div>
+                <div class="col50">
+                    <div class="imgBx img50">
+                        <img src={img03} alt="Imagem de crianças brincando" title='Imagem de crianças brincando'/>
+                    </div>
                 </div>
             </div>
         </section>

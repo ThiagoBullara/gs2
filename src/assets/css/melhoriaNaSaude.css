@@ -8,3 +8,26 @@
     background: url(../imgs/melhoriaNaSaude/00.jpg);
     background-size: cover;
 }
+
+.calculadoraImc .titleTextImc{
+    font-size: 1.5rem;
+}
+
+.calculadoraImc .labelImc {
+    font-size: 1.25rem;
+    margin-right: 25px;
+}
+
+.calculadoraImc .inputImc {
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid var(--corVermelho);
+}
+
+.calculadoraImc .labelResultado {
+    font-size: 1.25rem;
+}
+
+.calculadoraImc .labelResultado span {
+    color: var(--corVermelho);
+}

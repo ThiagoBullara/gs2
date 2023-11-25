@@ -2,10 +2,22 @@ import img01 from '../assets/imgs/doencaNaoTransmissivel/01.jpg';
 import img02 from '../assets/imgs/doencaNaoTransmissivel/02.jpg';
 
 import {Link} from 'react-router-dom';
+import React, { useState, useEffect  } from 'react';
 
 import '../assets/css/doencaNaoTransmissivel.css';
 
 function Pagina4() {
+
+    const [count2, setCount2] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCount2(count2 + 1);
+        }, 2000);
+
+        return () => clearInterval(interval);
+    }, [count2]);
+
     return(
         <>
 
@@ -47,7 +59,14 @@ function Pagina4() {
                 </div>
             </div>
         </section>
-
+        <section>
+            <div class="row rowInfo">
+                <div class="col100">
+                    <h3 class="titleText">A cada 2 segundos uma pessoa morre por doenças crônicas não transmissíveis no mundo. 
+                    No período em que você esteve nessa página <span>{count2}</span> morreram por DCNTs.</h3>
+                </div>
+            </div>
+        </section>
         <section class="dados">
             <div class="row">
                 <div class="col50">
