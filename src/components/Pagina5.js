@@ -111,7 +111,7 @@ function Pagina5() {
                         <input type="number" value={altura} onChange={(e) => setAltura(e.target.value)} min="0" class="inputImc"/><br/><br/>
                         <label class="labelImc">Insira o seu peso (em Kilos) </label>
                         <input type="number" value={peso} onChange={(e) => setPeso(e.target.value)} min="0" class="inputImc"/><br/><br/>
-                        <label class="labelResultado">Resultado: <span>{resultado}</span></label>
+                        <label class="labelResultado">Resultado: <span>{!isNaN(resultado) ? resultado : 0}</span></label>
                     </div>
                 </div>
                 <div class="col50">
